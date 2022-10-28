@@ -38,25 +38,35 @@ Time spent: 10+ hours spent in total
 - [x] Affected source code:
   - [GitHub WordPress](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 
-### 3. (Required) Vulnerability Name or ID
+### 3. Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds (CVE-2017-6817)
 
-- [ ] Summary: 
-  - Vulnerability types:
-  - Tested in version:
-  - Fixed in version: 
-- [ ] GIF Walkthrough: 
-- [ ] Steps to recreate: 
-- [ ] Affected source code:
-  - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+- [x] Summary: Combined with the recent content injection vulnerability we found, it’s possible for a remote attacker to deface a random post on the site and store malicious Javascript code in it. This code would be executed when a visitors view the post and when anyone edits the post from the WordPress dashboard. As a result, an administrator tries to fix the defaced post, the would unknowingly trigger the malicious script, which could then be used to put a backdoor on the site and create new admin users.
+  - Vulnerability types: XSS
+  - Tested in version: 4.2
+  - Fixed in version: 4.2.13
+- [x] GIF Walkthrough: 
+<img src='https://user-images.githubusercontent.com/91217813/198540301-67582958-73c7-4d05-805d-95c95f5c4021.gif' width='850' height='470' />
+
+- [x] Steps to recreate: 
+    - Create a new post
+    - Edit the post as Text, and embed the following:<br>
+    ```[embed src='http://youtube.com/embed/12345\x3csvg onload=alert(1)\x3e'][/embed]```
+    - View post
+- [x] Affected source code:
+  - [GitHub WordPress](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 
 ## Assets
 
-List any additional assets, such as scripts or files
+Image for Report # 2 was downloaded from [mob.org](https://wallpaper.mob.org/)
 
 ## Resources
 
 - [WordPress Source Browser](https://core.trac.wordpress.org/browser/)
 - [WordPress Developer Reference](https://developer.wordpress.org/reference/)
+- [WordPress 4.2 core stored XSS](https://klikki.fi/wordpress-4-2-core-stored-xss/)
+- [Packet Storm Security -- Persistent XSS](https://packetstormsecurity.com/files/131644/)
+- [WordPress Unsafe Processing of File Names](https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_vulnerability_in_wordpress_due_to_unsafe_processing_of_file_names.html)
+- [Stored XSS in WordPressCore](https://blog.sucuri.net/2017/03/stored-xss-in-wordpress-core.html)
 
 GIFs created with [ScreenToGif](https://www.screentogif.com/) for Windows
 
