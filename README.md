@@ -12,7 +12,9 @@ Time spent: 10+ hours spent in total
   - Vulnerability types: XSS
   - Tested in version: 4.2
   - Fixed in version: 4.2.1
-- [ ] GIF Walkthrough: 
+- [x] GIF Walkthrough: 
+<img src='https://user-images.githubusercontent.com/91217813/198522301-196eeda8-ff20-4d27-ab4d-c92cc6a27bec.gif' width='850' height='500' />
+
 - [x] Steps to recreate: 
     - Enter as a comment the following:
     ```
