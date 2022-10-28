@@ -13,7 +13,7 @@ Time spent: 10+ hours spent in total
   - Tested in version: 4.2
   - Fixed in version: 4.2.1
 - [x] GIF Walkthrough: 
-<img src='https://user-images.githubusercontent.com/91217813/198522301-196eeda8-ff20-4d27-ab4d-c92cc6a27bec.gif' width='850' height='500' />
+<img src='https://user-images.githubusercontent.com/91217813/198522301-196eeda8-ff20-4d27-ab4d-c92cc6a27bec.gif' width='850' />
 
 - [x] Steps to recreate: 
     - Enter as a comment the following:
@@ -30,7 +30,7 @@ Time spent: 10+ hours spent in total
   - Tested in version: 4.2
   - Fixed in version: 4.2.10
 - [x] GIF Walkthrough: 
-<img src='https://user-images.githubusercontent.com/91217813/198522301-196eeda8-ff20-4d27-ab4d-c92cc6a27bec.gif' width='850' height='500' />
+<img src='https://user-images.githubusercontent.com/91217813/198522301-196eeda8-ff20-4d27-ab4d-c92cc6a27bec.gif' width='850' />
 
 - [x] Steps to recreate:
     - Add any new media file and change its name/title to `<img src=a onerror=alert(document.cookie)>.jpg`
@@ -45,7 +45,7 @@ Time spent: 10+ hours spent in total
   - Tested in version: 4.2
   - Fixed in version: 4.2.13
 - [x] GIF Walkthrough: 
-<img src='https://user-images.githubusercontent.com/91217813/198540301-67582958-73c7-4d05-805d-95c95f5c4021.gif' width='850' height='470' />
+<img src='https://user-images.githubusercontent.com/91217813/198540301-67582958-73c7-4d05-805d-95c95f5c4021.gif' width='850'/>
 
 - [x] Steps to recreate: 
     - Create a new post
