@@ -25,14 +25,18 @@ Time spent: 10+ hours spent in total
   
 ### 2. Authenticated Stored Cross-Site Scripting via Image Filename (CVE-2016-7168)
 
-- [ ] Summary: A persistent Cross-Site-Scripting vulnerability where an attacker can create a speciall crafted image file name, which when uploaded in WordPress, injects malicious JavaScript code into the application. This could lead to the theft of user session tokens or login credentials.
+- [x] Summary: A persistent Cross-Site-Scripting vulnerability where an attacker can create a speciall crafted image file name, which when uploaded in WordPress, injects malicious JavaScript code into the application. This could lead to the theft of user session tokens or login credentials. Notice this involves social engineering.
   - Vulnerability types: XSS
   - Tested in version: 4.2
   - Fixed in version: 4.2.10
-- [ ] GIF Walkthrough: 
-- [ ] Steps to recreate: 
-- [ ] Affected source code:
-  - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+- [x] GIF Walkthrough: 
+<img src='https://user-images.githubusercontent.com/91217813/198522301-196eeda8-ff20-4d27-ab4d-c92cc6a27bec.gif' width='850' height='500' />
+
+- [x] Steps to recreate:
+    - Add any new media file and change its name/title to `<img src=a onerror=alert(document.cookie)>.jpg`
+    - Change the `Link to` option from the drop-down menu, and set it to `Attachment Page`
+- [x] Affected source code:
+  - [GitHub WordPress](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 
 ### 3. (Required) Vulnerability Name or ID
 
