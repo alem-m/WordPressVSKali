@@ -1,28 +1,32 @@
 # Project 7 - WordPress Pen Testing
 
-Time spent: 20 hours spent in total
+Time spent: 10+ hours spent in total
 
 > Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
 
 ## Pen Testing Report
 
-### 1. (Required) Vulnerability Name or ID
+### 1. Unauthenticated Stored Cross-Site Scripting (CVE-2015-3440)
 
-- [ ] Summary: 
-  - Vulnerability types:
-  - Tested in version:
-  - Fixed in version: 
+- [x] Summary: An unathorized user/attacker can inject JavaScrip in WordPress comments, which will be triggered when the comment is viewed. If triggered by a logged-in administrator, under default settings the attacker can leverage the vulnerability to execute arbitrary code on the server via the plugin and theme editors.
+  - Vulnerability types: XSS
+  - Tested in version: 4.2
+  - Fixed in version: 4.2.1
 - [ ] GIF Walkthrough: 
-- [ ] Steps to recreate: 
-- [ ] Affected source code:
+- [x] Steps to recreate: 
+    - Enter as a comment the following:
+    ```
+    <a title='x onmouseover=alert(unescape(/hello%20world/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a>
+    ```
+- [x] Affected source code:
   - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
   
-### 2. (Required) Vulnerability Name or ID
+### 2. Authenticated Stored Cross-Site Scripting via Image Filename (CVE-2016-7168)
 
-- [ ] Summary: 
-  - Vulnerability types:
-  - Tested in version:
-  - Fixed in version: 
+- [ ] Summary: A persistent Cross-Site-Scripting vulnerability where an attacker can create a speciall crafted image file name, which when uploaded in WordPress, injects malicious JavaScript code into the application. This could lead to the theft of user session tokens or login credentials.
+  - Vulnerability types: XSS
+  - Tested in version: 4.2
+  - Fixed in version: 4.2.10
 - [ ] GIF Walkthrough: 
 - [ ] Steps to recreate: 
 - [ ] Affected source code:
