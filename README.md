@@ -58,15 +58,9 @@ List any additional assets, such as scripts or files
 - [WordPress Source Browser](https://core.trac.wordpress.org/browser/)
 - [WordPress Developer Reference](https://developer.wordpress.org/reference/)
 
-GIFs created with  ...
-<!-- Recommended GIF Tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+GIFs created with [ScreenToGif](https://www.screentogif.com/) for Windows
 
-## Notes
 
-Describe any challenges encountered while doing the work
 
 ## License
 
