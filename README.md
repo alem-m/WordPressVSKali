@@ -1,7 +1,5 @@
 # Project 7 - WordPress Pen Testing
 
-Time spent: 10+ hours spent in total
-
 > Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
 
 ## Pen Testing Report
